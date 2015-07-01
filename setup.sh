@@ -10,4 +10,6 @@ echo "Previous password was ${IBASE_PASSWORD}"
 
 ./bin/fbguard -onetime -daemon
 
+sleep 10
+
 ./bin/gsec -user sysdba -pass $IBASE_PASSWORD -mo sysdba -pw masterkey
