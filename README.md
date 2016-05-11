@@ -3,7 +3,7 @@ Docker image with Firebird 2.5 Superserver
 
 _Based on [jacobalberty/firebird-docker](https://github.com/jacobalberty/firebird-docker)_
 
-Contains Firebird 2.5.4 with Superserver architecture.
+Contains Firebird 2.5 with Superserver architecture.
 
 **SYSDBA** password is set to `masterkey`.
 
