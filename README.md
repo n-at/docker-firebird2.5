@@ -10,7 +10,11 @@ Contains Firebird 2.5 with Superserver architecture.
 Usage
 -----
 
-    $ docker run -d -p 3050:3050 -v /sqlbase:/sqlbase atnurgaliev/firebird2.5
+    $ docker run -d \
+        -p 3050:3050 \
+        -v /sqlbase:/sqlbase \
+        --name firebird \
+        atnurgaliev/firebird2.5
 
 License
 -------
