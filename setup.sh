@@ -12,4 +12,4 @@ echo "Previous password was ${IBASE_PASSWORD}"
 
 sleep 10
 
-./bin/gsec -user sysdba -pass $IBASE_PASSWORD -mo sysdba -pw masterkey
+./bin/gsec -user sysdba -pass "${IBASE_PASSWORD}" -mo sysdba -pw "${SYSDBA_PASSWORD}"

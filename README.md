@@ -5,7 +5,10 @@ _Based on [jacobalberty/firebird-docker](https://github.com/jacobalberty/firebir
 
 Contains Firebird 2.5 with Superserver architecture.
 
-**SYSDBA** password is set to `masterkey`.
+**SYSDBA** password is set to `masterkey` by default. 
+If you want to change this password, use build arg:
+
+    docker build -t firebird --build-arg SYSDBA_PASSWORD=test .
 
 Usage
 -----
