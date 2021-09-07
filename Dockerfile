@@ -16,7 +16,7 @@ RUN apt-get update &&\
         "https://github.com/FirebirdSQL/firebird/releases/download/R2_5_9/Firebird-2.5.9.27139-0.tar.bz2" &&\
     tar --strip=1 -xf firebird.tar.bz2 &&\
     \
-    ./configure --enable-superserver --prefix=/usr/local/firebird &&\
+    ./configure --prefix=/usr/local/firebird &&\
     make &&\
     make silent_install &&\
     \
@@ -27,6 +27,8 @@ RUN apt-get update &&\
     rm /usr/local/firebird_setup.sh &&\
     \
     apt-get purge -y --auto-remove libncurses5-dev bzip2 curl gcc g++ make
+
+ADD firebird.conf /usr/local/firebird/firebird.conf
 
 VOLUME ["/sqlbase"]
 
